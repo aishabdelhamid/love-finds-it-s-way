@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love finds it's way</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #faf6d2;
+            overflow: hidden;
+            flex-direction: column;
+            position: relative;
+        }
+body {
+    background-color: #fff8dc;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><text x="10" y="25" font-size="20" fill="pink">❤</text></svg>');
+    background-size: 30px 30px;
+	}
+        .envelope {
+            width: 500px;
+            height: 280px;
+            background-color: #ddf4f3;
+            border: 2px solid #d3eceb;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .stamp {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background: #f9dbf3;
+    border: 5px solid white;
+    clip-path: polygon(
+        10% 0%, 20% 5%, 30% 0%, 40% 5%, 50% 0%, 60% 5%, 70% 0%, 80% 5%, 90% 0%, 100% 10%, 
+        95% 20%, 100% 30%, 95% 40%, 100% 50%, 95% 60%, 100% 70%, 95% 80%, 100% 90%, 
+        90% 100%, 80% 95%, 70% 100%, 60% 95%, 50% 100%, 40% 95%, 30% 100%, 20% 95%, 10% 100%, 0% 90%, 
+        5% 80%, 0% 70%, 5% 60%, 0% 50%, 5% 40%, 0% 30%, 5% 20%, 0% 10%
+    );
+	}
+        .address {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 18px;
+            color: black;
+            text-align: right;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .letter {
+            width: 500px;
+            height: 500px;
+            background: white;
+            position: center;
+            top: 50px;
+            left: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(100%);
+            transition: transform 1s ease-in-out;
+            font-family: 'Courier New', Courier, monospace;
+            display: none;
+            overflow-y: auto;
+        }
+        .open .letter {
+            transform: translateY(0);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope" onclick="openEnvelope()">
+        <div class="stamp"></div>
+        <div class="address">
+            Youssef Reda Youssef<br>
+            Sakan Masr, Building 2, Apartment 1<br>
+            3280320 6th of October<br>
+            Giza, EGYPT
+        </div>
+    </div>
+    <div class="letter">
+        <p>Hello my love!</p>
+        <p>Before I say anything more, I want you to take a moment to appreciate that you are currently reading this letter. Like, you’re holding the physical letter in your hands and are reading it. How A M A Z I N G!</p>
+        <p>It’s kind of hard to think about what to write. I want to write everything in my mind and at the same time not write a whole novel. But you deserve a novel <span class="heart">❤</span></p>
+        <p>I’ll start by asking you: how are you doing? Take a moment and take a deep breath. Take the moment in. Savour it. Feel! I hope you are doing well! I know I am doing well. My day is just starting. And it’s starting on a good note, since I am kicking it off by writing a letter to the guy that has turned my head upside down the last couple of months :)
+What to write in this letter? That is THE question i’ve been asking myself the last couple of days. It’s kind of hard to choose only one thing to write to you about. So I think, in true Aisha fashion, I will write anything and everything that comes to my mind. 
+And the first thing that does come to my mind is how happy I am we are doing this! I have to share with you the happiness and excitement I felt when you were also so excited about the idea of sending each other letters. I always wanted to do this! Sending letters was such a big part of my childhood and I find it such a pity we don't do this anymore. Because how beautiful of a gesture is it to send someone a hand written letter! I love the process of sending and receiving letters. The thought behind what to write, how to write it, what to put with the letter. And the excitement of actually receiving the letter. Ugh, how excited I am to get yours!!! I am pretty sure I'm going to shed a tear because of how special that moment is going to be. 
+I appreciate the effort you put into this SO much. When we facetime and you tell me how much you thought about how to design the letter, and how many attempts it took you to write it by hand. All of that does not go unnoticed <3 
+In my eyes, it’s such a loud way of saying I love you! And I know I do! 
+Have I told you already how happy I am that our paths crossed again? If not, here it comes: Youssef, i am so happy our paths crossed again. I have been a firm believer of “whatever is meant to be will be” for quite some time now. And, without wanting to jinx anything, seeing where we've come in our relationship now is to me the incorporation of that saying. I am so proud of us both! I am so proud of how we are developing in this relationship. I was scared at first, I won't lie. I was scared of the bumps we will face, and of revealing our hidden sides to each other. And that fear for sure still exists in a certain way. But, with all the doors we’ve already opened to each other and with all the tiny bumps we’ve already passed, I can with no doubt say that I am happy I get to face those fears with you. I can only see us growing and flourishing with time passing. Because we're doing so good <3 or what do you think? 
+It feels so good sharing my thoughts with you. When I am with you, I feel so grounded and at peace. It's like you automatically carry a weight off my shoulder. I feel loved and cared for! And for that i am really grateful <3 I hope I'm making you feel the same way! Because that's all I want. I love showing you that I love you! I love showing others that I love you! I just love loving you! </p>
+        <p>Youssef, at the end of this letter, i want to say one thing: you make my heart happy 
+You make me day dream and take wrong turns when I am walking in the street thinking about you. You make me go to sleep with the biggest smile on my face. You make me smirk and turn into a little 5 year old when I talk to my friends about. I feel so lucky to have a guy like you I get to write a letter to!</p>
+        <p>I love you <span class="heart">❤</span></p>
+         <p>Until we hug again,</p>
+        <p>Your Ash</p>
+    </div>
+    <script>
+    function openEnvelope() {
+        document.body.classList.add('open');
+        document.querySelector('.envelope').style.display = 'none'; // Hide the envelope
+        document.querySelector('.letter').style.display = 'block'; // Show the letter
+    }
+</script>
+</body>
+</html>
+
+
